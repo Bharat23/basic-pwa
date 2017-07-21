@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:data="http://www.w3.org/1999/xhtml">
 <head>
 	<title>PWA - Intellimeet</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/material.min.css">
-    <link rel="stylesheet" type="text/css" href="css/material.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3F51B5">
+    <style type="text/css">
+        .splash-screen{
+            top:0;
+            left:0;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background:royalblue;
+        }
+        .loader {
+            border: 8px solid #f3f3f3; /* Light grey */
+            border-top: 8px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1.5s linear infinite;
+            top: 50%;
+            left: 50%;
+            position: fixed;
+            margin-left: -30px;
+            margin-top: -30px;
+        }
+
+        .hide-splash-screen {
+            animation: fadeout 1s linear;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(180deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeout {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
 </head>
 <body>
-<!-- Always shows a header, even in smaller screens. -->
+<div id="splash-screen" class="splash-screen">
+    <div class="loader"></div>
+</div>
+ <!--Always shows a header, even in smaller screens.-->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
@@ -39,18 +79,33 @@
   </main>
 </div>
 </body>
+<link rel="stylesheet" type="text/css" href="css/material.min.css">
+<link rel="stylesheet" type="text/css" href="css/material.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <script type="text/javascript" src="js/material.min.js"></script>
 <script>
-  var success = function (msg) {
-      console.log('Service Worker Registered Successfully', msg);
-  };
-  var error = function (err) {
-      console.log('Service worker registeration failed', err);
-  };
-  if('serviceWorker' in navigator){
-      navigator.serviceWorker.register('/my-sw.js')
-          .then(success)
-          .catch(error);
-  }
+    window.addEventListener('load',function () {
+        splashScreen();
+       registerServiceWorker();
+    });
+    var registerServiceWorker = function () {
+        var success = function (msg) {
+            console.log('Service Worker Registered Successfully', msg);
+        };
+        var error = function (err) {
+            console.log('Service worker registeration failed', err);
+        };
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/my-sw.js')
+                .then(success)
+                .catch(error);
+        }
+    };
+    var splashScreen = function () {
+        document.getElementById('splash-screen').className += ' hide-splash-screen';
+        setTimeout(function () {
+            document.getElementById('splash-screen').style.display = 'none';
+        },1000)
+    };
 </script>
 </html>
