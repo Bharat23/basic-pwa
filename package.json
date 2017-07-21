@@ -1,0 +1,19 @@
+{
+  "name": "pwa-ppt",
+  "version": "1.0.0",
+  "description": "Boiler plate for PWA App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bharat Sinha",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "morgan": "^1.8.2",
+    "nodemon": "^1.11.0",
+    "sw-precache": "^5.2.0"
+  }
+}
