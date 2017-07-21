@@ -54,7 +54,7 @@ self.addEventListener('fetch', function (event) {
                     })
             })
             .catch(function () {
-                return caches.match('');
+                return new Response({message: 'nothing to display'});
             })
     );
 });
