@@ -54,7 +54,7 @@ self.addEventListener('fetch', function (event) {
                     })
             })
             .catch(function () {
-                return new Response({message: 'nothing to display'});
+                return new Response(JSON.stringify({message: 'nothing to display'}));
             })
     );
 });
