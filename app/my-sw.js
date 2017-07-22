@@ -50,7 +50,6 @@ self.addEventListener('fetch', function (event) {
                                     cache.put(fetchRequest, responseClone)
                                 });
                         }
-
                         return response;
                     })
             })
