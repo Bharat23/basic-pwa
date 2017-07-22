@@ -3,6 +3,7 @@ var CACHE_NAME = 'bharat-v1';
 var CACHE_BLACKLIST = ['/my-sw.js','/sw.js'];
 
 var CACHE_LIST = [
+    '/',
     '/index.html',
     '/css/material.min.css',
     '/css/material.min.js'
