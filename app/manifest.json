@@ -39,14 +39,6 @@
       "density": 4
     }
   ],
-  /*prefer_related_applications: true,
-  related_applications: [
-    {
-      platform: "play",
-      url: "https://play.google.com/store/apps/details?id=com.indiamart.m&referrer=utm_source%3Dmobilesite%26utm_medium%3DNativeBanner%26utm_campaign%3DNativeInstall",
-      id: "com.indiamart.m"
-    }
-  ],*/
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
