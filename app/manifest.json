@@ -1,6 +1,7 @@
 {
   "name": "Basic PWA App",
   "short_name": "Web App Lite",
+  "gcm_sender_id": "1073424761741",
   "icons": [
     {
       "src": "/images/logo_36.png",

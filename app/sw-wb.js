@@ -1,4 +1,4 @@
-importScripts('/workbox-sw/build/importScripts/workbox-sw.prod.v2.1.0.js');
+importScripts('/workbox-sw/build/importScripts/workbox-sw.prod.v2.1.3.js');
 
 
 //clientclain immediately takes control of the client as soon as it is activated
@@ -10,15 +10,15 @@ workboxSW.precache([
         revision: '1'
     },
     {
-        url: '/js/material.min.js',
+        url: '/static/js/material.min.js',
         revision: '1'
     },
     {
-        url: '/js/main.js',
+        url: '/static/js/main.js',
         revision: '1'
     },
     {
-        url: '/css/material.min.css',
+        url: '/static/css/material.min.css',
         revision: '1'
     },
     {
@@ -28,7 +28,7 @@ workboxSW.precache([
 ]);
 
   workboxSW.router.registerRoute(
-    '/images/(.*)',
+    '/static/images/(.*)',
     workboxSW.strategies.cacheFirst({
       cacheName: 'images',
       cacheExpiration: {
@@ -47,9 +47,22 @@ console.log('ge',workboxSW.strategies);
   );
 
   workboxSW.router.registerRoute(
-    '/data/(.*).json',
+    '/static/data/(.*).json',
     workboxSW.strategies.networkFirst({
       cacheName: 'API',
       networkTimeoutSeconds: 2
     })
   );
+
+  self.addEventListener('push', (e) => {
+    let body;
+    if (e.body) {
+      body = e.body.text();
+    }
+    else {
+      body = 'No Payload';
+    }
+    e.waitUntil(
+      self.registration.showNotification(body)
+    );
+  });

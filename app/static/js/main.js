@@ -63,7 +63,7 @@ let handleError = (err) => {
 };
 
 var fetchPosts = () => {
-    return fetch('/data/blogs.json');
+    return fetch('/static/data/blogs.json');
 };
 
 var cleanContent = () => document.getElementsByClassName('page-content')[0].innerHTML = '';
@@ -77,6 +77,21 @@ var init = () => {
         data.map(val => createPostItem(val, 2, false, 'Read More'));
     })
     .catch(handleError);
+    if (Notification.permission !== 'granted') {
+        Notification.requestPermission()
+        .then(access => {
+            console.log('Notification Status')
+            if (access === 'granted') {
+                return navigator.serviceWorker.getRegistration()
+            }
+            else {
+                console.log('NOOOOO')
+            }
+        })
+        .then(reg => {
+            reg.showNotification('Hellow');
+        });
+    }
 };
 
 var initPostPage = () => {
@@ -108,3 +123,13 @@ window.addEventListener('click', (ev) => {
         location.href = '/post-page.html?postid=' + ev.target.dataset.postId;
     }
 });
+
+const subscribeUser = () => {
+    navigator.serviceWorker.ready
+    .then((reg) => {
+        return reg.pushManager.subscribe({ userVisibleOnly: true })
+    })
+    .then(sub => {
+        console.log(sub);
+    })
+};

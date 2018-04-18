@@ -5,9 +5,9 @@ var CACHE_BLACKLIST = ['/my-sw.js','/sw.js'];
 var CACHE_LIST = [
     '/',
     '/index.html',
-    '/css/material.min.css',
-    '/css/material.min.js',
-    '/js/main.js'
+    '/static/css/material.min.css',
+    '/static/css/material.min.js',
+    '/static/js/main.js'
 ];
 
 self.addEventListener('install', function (event) {
