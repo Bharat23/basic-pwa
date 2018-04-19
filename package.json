@@ -2,18 +2,24 @@
   "name": "pwa-ppt",
   "version": "1.0.0",
   "description": "Boiler plate for PWA App",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js --exec babel-node"
   },
   "author": "Bharat Sinha",
   "license": "ISC",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "body-parser": "^1.18.2",
     "express": "^4.15.3",
+    "mongoose": "^5.0.15",
     "workbox-sw": "^2.1.0"
   },
   "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "morgan": "^1.8.2",
     "nodemon": "^1.11.0",
     "sw-precache": "^5.2.0"

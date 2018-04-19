@@ -1,0 +1,126 @@
+{
+    "status": "ok",
+    "totalResults": 10,
+    "articles": [
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Martha Tesema",
+            "title": "Migos' Offset shares a delicious stir-fry recipe on 'Tonight Show'",
+            "description": "Someone give Migos a James Beard award, stat",
+            "url": "http://mashable.com/2018/04/18/migos-offset-stir-fry-recipe/",
+            "urlToImage": "https://i.amz.mshcdn.com/zPsbOj8q6I6VYvtImy3l1FX37gs=/1200x630/2018%2F04%2F18%2F5e%2F80a666283bc14202900126f01cb52155.fdac2.png",
+            "publishedAt": "2018-04-18T15:25:55Z"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Angie Han",
+            "title": "Summer movie preview: What to watch if you’re in a dark and twisted mood",
+            "description": "Come join us in this cold, dark cave (a.k.a. our local theater).",
+            "url": "http://mashable.com/2018/04/18/summer-movie-preview-2018-horror-thriller/",
+            "urlToImage": "https://i.amz.mshcdn.com/6oTxy8ejUK-t72EHU2oGrV4Rfuc=/1200x630/2018%2F04%2F18%2Fec%2F98075c009a86472e83066c062c156cfb.9a538.jpg",
+            "publishedAt": "2018-04-18T15:14:08Z"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Ray White",
+            "title": "Michael Phelps discusses how he learned to overcome suicidal thoughts",
+            "description": "Olympic gold medalist Michael Phelps opens up about overcoming the darkest moments of his career.",
+            "url": "http://mashable.com/2018/04/18/michael-phelps-mental-health/",
+            "urlToImage": "https://i.amz.mshcdn.com/bp6ozMH3o7rvbaH2dI7ing6eQo0=/1200x630/2018%2F04%2F18%2F08%2F3db08405289b42e8b33b1ea3039eec35.b114b.png",
+            "publishedAt": "2018-04-18T15:01:11Z"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Carlos Cadorniga",
+            "title": "Bose SoundSport headphones are on sale for less than $90",
+            "description": "Save on Bose like the boss that you are.",
+            "url": "http://mashable.com/2018/04/18/bose-soundsport-headphones-sale/",
+            "urlToImage": "https://i.amz.mshcdn.com/2IqKT54U9Ty4-egTTQIpNah54FY=/1200x630/2018%2F04%2F18%2Ffb%2F1d7862a0916440888c4e7dc245cba42d.5cd88.jpg",
+            "publishedAt": "2018-04-18T14:18:32Z"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Carlos Cadorniga",
+            "title": "Love anime? A Crunchyroll account will get you access to more than 800 shows, plus manga titles and more.",
+            "description": "Anime all day, every day.",
+            "url": "http://mashable.com/2018/04/18/crunchyroll-membership-anime-subscription-service/",
+            "urlToImage": "https://i.amz.mshcdn.com/IFq73jENyU_sqU1_iA-XWE_idd8=/1200x630/2018%2F04%2F18%2F0d%2F64c92ff6aab346c9a00c0d1b5b746e5f.b6781.jpg",
+            "publishedAt": "2018-04-18T13:59:52Z"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Carlos Cadorniga",
+            "title": "Save on pressure washers, electric razors, Timbuk2 bags, and more",
+            "description": "For cleaning, carrying, and reclining.",
+            "url": "http://mashable.com/2018/04/18/amazon-daily-deals-april-18/",
+            "urlToImage": "https://i.amz.mshcdn.com/yrdj-fQIKVEbEFz_8OLpPEhNJVY=/1200x630/2018%2F04%2F18%2Fa1%2F59c34d2e147b464883bebeabb124054d.8dd0a.jpg",
+            "publishedAt": "2018-04-18T13:57:54Z"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Leah Stodart",
+            "title": "This Sony 4K smart TV is on sale and comes with a $250 Dell gift card",
+            "description": "Let's put this in perspective: $250 is halfway (or more) to a new PS4 Pro, Xbox One X, or Nintendo Switch.",
+            "url": "http://mashable.com/2018/04/17/sony-tv-on-sale-xbox-ps4-nintendo/",
+            "urlToImage": "https://i.amz.mshcdn.com/_tiVis_FGS8y2FzAEXxXnKD244E=/1200x630/2018%2F04%2F17%2F61%2F1ce1a269521d4ef1b11fbff0d4cc4df2.621c1.png",
+            "publishedAt": "2018-04-17T18:43:44Z"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Michelle Yan",
+            "title": "Check out these 4 wild gardens that will make you green with envy",
+            "description": "Oh you keep a garden in your backyard? That's cute.",
+            "url": "http://mashable.com/2018/04/17/gardens-unexpected-places/",
+            "urlToImage": "https://i.amz.mshcdn.com/CdAhBpVmMXN4m67YwhkS32E00U4=/1200x630/2018%2F04%2F17%2F97%2Fc8f7b59fb9e24efeb02e89b463bfb586.92fdf.jpg",
+            "publishedAt": "2018-04-17T16:36:14Z"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Martha Tesema",
+            "title": "One of Beyoncé's backup dancers predicted he would perform with the Queen exactly two years ago",
+            "description": "I completely forgot that I spoke this into the atmosphere almost two years ago.",
+            "url": "http://mashable.com/2018/04/17/beyonce-dancer-coachella-tweet/",
+            "urlToImage": "https://i.amz.mshcdn.com/I2-KOG7bYdlN54w031Z0eOS64D0=/1200x630/2018%2F04%2F17%2Fad%2Fd94eeac7a43a41118ea761980e406cfd.e9bac.jpg",
+            "publishedAt": "2018-04-17T16:34:45Z"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Angie Han",
+            "title": "Summer movie preview: What to watch if you wanna feel warm and fuzzy",
+            "description": "For when you want to feel as warm on inside as you do on the outside.",
+            "url": "http://mashable.com/2018/04/17/summer-movie-preview-2018-feel-good-movies/",
+            "urlToImage": "https://i.amz.mshcdn.com/cQhDZ2HdGis1Slnh_moxkvwlPLc=/1200x630/2018%2F04%2F17%2Fcf%2F2bcf58fe364742aba3311842897adf67.d7f41.jpg",
+            "publishedAt": "2018-04-17T16:34:35Z"
+        }
+    ]
+}

@@ -22,6 +22,10 @@ workboxSW.precache([
         revision: '1'
     },
     {
+        url: '/static/css/style.css',
+        revision: '1'
+    },
+    {
         url: '/index.html',
         revision: '1'
     }
@@ -39,7 +43,17 @@ workboxSW.precache([
     })
   );
 
-console.log('ge',workboxSW.strategies);
+  workboxSW.router.registerRoute(
+    'https://fonts.googleapis.com/icon\?(.*)',
+    workboxSW.strategies.cacheFirst({
+      cacheName: 'fonts',
+      cacheExpiration: {
+        maxEntries: 10,
+        maxAgeSeconds: 30 * 24 * 60 * 60,
+      },
+      cacheableResponse: {statuses: [0, 200]},
+    })
+  );
 
   workboxSW.router.registerRoute(
     '/post-page.html(.*)',
@@ -56,11 +70,12 @@ console.log('ge',workboxSW.strategies);
 
   self.addEventListener('push', (e) => {
     let body;
-    if (e.body) {
-      body = e.body.text();
+    console.log(e.data);
+    if (e.data) {
+      body = e.data.text();
     }
     else {
-      body = 'No Payload';
+      body = 'Hey There!!';
     }
     e.waitUntil(
       self.registration.showNotification(body)

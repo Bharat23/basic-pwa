@@ -7,6 +7,9 @@
     <meta name="theme-color" content="#3F51B5">
     <link rel="icon" href="/static/images/logo_36.png">
     <style type="text/css">
+        body {
+            background: #dfe0cd;
+        }
         .splash-screen{
             top:0;
             left:0;
@@ -48,7 +51,12 @@
             padding: 10px;
             flex: 1;
         }
-
+        .float-btn {
+            position: fixed !important;
+            right: 10px;
+            bottom: 10px;
+            z-index: 10;
+        }
         @media only screen and (min-width: 768px) {
             .page-content div{
                 flex: 0.3;
@@ -125,6 +133,11 @@
             </div>
         </div>
     </div>
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored float-btn" aria-label="notifications">
+        <span class="material-icons notifications-icon">
+            notifications
+        </span>
+    </button>
   </main>
 </div>
 </body>
@@ -137,8 +150,18 @@
     window.addEventListener('load', () => {
         initOnline();
         splashScreen();
-       registerServiceWorker();
+        registerServiceWorker();
+        callStaticContent();
     });
+
+    let callStaticContent = () => {
+        let link = document.createElement('link');
+        link.setAttribute('href', '/static/css/style.css');
+        link.setAttribute('rel', 'stylesheet');
+        link.setAttribute('type', 'text/css');
+        document.head.appendChild(link);
+    };
+
     var registerServiceWorker = () => {
         var success = (reg) => {
             console.log('Service Worker Registered Successfully', reg);
@@ -146,7 +169,10 @@
         };
         let subscribe = (subscribeState) => {
             if (subscribeState === null) {
-                subscribeUser();
+                console.log('User is not subscribed');
+            }
+            else {
+                console.log('User subscription state', subscribeState);
             }
         };
         var error = (err) => {
@@ -159,6 +185,7 @@
                 .catch(error);
         }
     };
+
     var splashScreen = () => {
         document.getElementById('splash-screen').className += ' hide-splash-screen';
         setTimeout(() => {
