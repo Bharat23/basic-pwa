@@ -4,37 +4,37 @@
   "gcm_sender_id": "1073424761741",
   "icons": [
     {
-      "src": "/images/logo_36.png",
+      "src": "/static/images/logo_36.png",
       "sizes": "36x36",
       "type": "image/png",
       "density": 0.75
     },
     {
-      "src": "/images/logo_48.png",
+      "src": "/static/images/logo_48.png",
       "sizes": "48x48",
       "type": "image/png",
       "density": 1
     },
     {
-      "src": "/images/logo_72.png",
+      "src": "/static/images/logo_72.png",
       "sizes": "72x72",
       "type": "image/png",
       "density": 1.5
     },
     {
-      "src": "/images/logo_96.png",
+      "src": "/static/images/logo_96.png",
       "sizes": "96x96",
       "type": "image/png",
       "density": 2
     },
     {
-      "src": "/images/logo_144.png",
+      "src": "/static/images/logo_144.png",
       "sizes": "144x144",
       "type": "image/png",
       "density": 3
     },
     {
-      "src": "/images/logo_192.png",
+      "src": "/static/images/logo_192.png",
       "sizes": "192x192",
       "type": "image/png",
       "density": 4
