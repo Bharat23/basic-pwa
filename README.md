@@ -22,6 +22,6 @@ npm install
 
 ```
 
-nodemon index.js
+npm start
 
 ```

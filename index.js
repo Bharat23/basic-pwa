@@ -23,5 +23,5 @@ app.use(express.static(__dirname + '/node_modules'));
 app.use('/api', API);
 
 
-const port = config.SERVER.PORT;
+const port = process.env.PORT || config.SERVER.PORT;
 app.listen(port, () => console.log(`App is running on port: ${ port }`));
