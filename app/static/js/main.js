@@ -157,16 +157,16 @@ const changeButtonStatus = (status) => {
 };
 
 const subscribeForPush = () => {
-    navigator.serviceWorker.ready
-    .then((reg) => {
-        console.log('here', reg);
-        reg.pushManager.subscribe({ userVisibleOnly: true })
-        .then(subscribe => {
-            console.log(subscribe.endpoint, 'subscribed');
-            storeSubscriptionDetails(subscribe.endpoint);
-        })
-        .catch(err => console.error(err));
-    })
+    // navigator.serviceWorker.ready
+    // .then((reg) => {
+    //     console.log('here', reg);
+    //     reg.pushManager.subscribe({ userVisibleOnly: true })
+    //     .then(subscribe => {
+    //         console.log(subscribe.endpoint, 'subscribed');
+    //         storeSubscriptionDetails(subscribe.endpoint);
+    //     })
+    //     .catch(err => console.error(err));
+    // })
 };
 
 const subscribeToNotification = () => {

@@ -165,7 +165,7 @@
     var registerServiceWorker = () => {
         var success = (reg) => {
             console.log('Service Worker Registered Successfully', reg);
-            return reg.pushManager.getSubscription()
+            // return reg.pushManager.getSubscription()
         };
         let subscribe = (subscribeState) => {
             if (subscribeState === null) {
@@ -179,9 +179,9 @@
             console.log('Service worker registeration failed', err);
         };
         if('serviceWorker' in navigator){
-            navigator.serviceWorker.register('/sw-wb.js')
+            navigator.serviceWorker.register('/my-sw-new.js')
                 .then(success)
-                .then(subscribe)
+                // .then(subscribe)
                 .catch(error);
         }
     };
